@@ -16,4 +16,18 @@ test('Secure login test', async({page})=> {
 
     await page.locator('//*[@id="ctl00_MainContent_fmwOrder_ddlProduct"]').selectOption("ScreenSaver");
     await page.locator('//*[@id="ctl00_MainContent_fmwOrder"]/tbody/tr/td/ol[1]/li[2]/label').fill("2");
+    await page.locator('//*[@id="ctl00_MainContent_fmwOrder_txtUnitPrice"]').fill("98");
+    await page.locator('//*[@id="ctl00_MainContent_fmwOrder_txtDiscount"]').fill("10");
+
+    await page.locator('//*[@id="ctl00_MainContent_fmwOrder_txtName"]').fill("Tarun");
+    await page.locator('//*[@id="ctl00_MainContent_fmwOrder_TextBox2"]').fill("khaugali");
+    await page.locator('//*[@id="ctl00_MainContent_fmwOrder_TextBox3"]').fill("Pune");
+    
+    
+    await page.locator('//*[@id="ctl00_MainContent_fmwOrder_TextBox4"]').fill("Maharashtr");
+    await page.locator('//*[@id="ctl00_MainContent_fmwOrder_TextBox5"]').fill("411061");
+    
+    
+    
+    
 });
